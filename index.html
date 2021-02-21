@@ -28,11 +28,11 @@
       </ul>
     </nav>
 
-    <a href="#get-started-form">
-      <div id="get-started">
-        <p>Get Started</p>
-      </div>
-    <a/>
+    <div id="get-started">
+      <a href="#get-started-form-container">
+        Get Started
+      </a>
+    </div>
   </header>
     
   <!-- Main -->
@@ -46,7 +46,9 @@
       <p id="hero-p">Replace your notebooks and documents <br /> with paper like tablet</p>
       
       <button id="hero-get-started">
-        <p>Get Started</p>
+        <a href="#get-started-form-container">
+          Get Started
+        </a>
       </button>
 
       <div id="scroll-text-container">
@@ -74,92 +76,107 @@
     
     <!-- Specs -->
     <div id="specs">
-      <h1>Technical specifications</h1>
-      <div id="specs-line"></div>
+      <h1>Technical Specifications</h1>
 
-      <h2 id="size">Size and weight</h2>
-      <p>187 x 246 x 4.7 mm <br />
-        Approximately 403.5 g (.88 lb)
-      </p>
+      <div class="spec">
+        <h2>Size and weight</h2>
+        <p>187 x 246 x 4.7 mm <br />
+          Approximately 403.5 g (.88 lb)
+        </p>
+      </div>
 
-      <h2 id="processor">Processor</h2>
-      <p>1.2 GHz dual core ARM</p>
+      <div class="spec">
+        <h2>Processor</h2>
+        <p>1.2 GHz dual core ARM</p>
+      </div>
 
-      <h2 id="storage">Storage and RAM</h2>
-      <p>1 GB LPDDR3 SDRAM <br />
-        8 GB internal storage (100,000 pages)</p>
+      <div class="spec">
+        <h2>Storage and RAM</h2>
+        <p>1 GB LPDDR3 SDRAM <br />
+          8 GB internal storage (100,000 pages)</p>
+      </div>
 
-      <h2 id="connectivity">Connectivity</h2>
-      <p>Wi-Fi 2.4GHz and 5GHz <br />
-        USB-C <br />
-        Accessory port</p>
+      <div class="spec">
+        <h2>Connectivity</h2>
+        <p>Wi-Fi 2.4GHz and 5GHz <br />
+          USB-C <br />
+          Accessory port</p>
+      </div>
 
-      <h2 id="battery">Battery</h2>
-      <p>Rechargeable (Li-ion) battery <br />
-        USB-C charging <br />
-        3000 mAh</p>
+      <div class="spec">
+        <h2>Battery</h2>
+        <p>Rechargeable (Li-ion) battery <br />
+          USB-C charging <br />
+          3000 mAh</p>
+      </div>
 
-      <h2 id="document">Document support</h2>
-      <p>PDF and ePUB</p>
+      <div class="spec">
+        <h2>Document support</h2>
+        <p>PDF and ePUB</p>
+      </div>
 
-      <h2 id="other">Other</h2>
-      <p>Note and file syncing between Notable tablet and Notable apps <br />
-        for MacOS, Windows 7 and newer, iOS, and Android
-      </p>
+      <div class="spec">
+        <h2>Other</h2>
+        <p>Note and file syncing between Notable tablet and Notable apps <br />
+          for MacOS, Windows 7 and newer, iOS, and Android
+        </p>
+      </div>
     </div>
     
     <!-- Get Started -->
-    <h1 id="get-started-form">The only tablet that feels like paper</h1>
-    <form
-          id="form"
-          action="https://www.freecodecamp.com/email-submit"
-          method="post"
-          target="_self">
-      <label for="email"></label>
-      <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Enter you email address"
-            /><br />
-      <input
-            type="submit"
-            id="submit"
-            value="Get Started"
-            />
-    </form>
+    <div id="get-started-form-container">
+      <h1 id="get-started-form">The only tablet that feels like paper</h1>
+      <form
+            id="form"
+            action="https://www.freecodecamp.com/email-submit"
+            method="post"
+            target="_self">
+        <label for="email"></label>
+        <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter you email address"
+              /><br />
+        <input
+              type="submit"
+              id="submit"
+              value="Get Started"
+              />
+      </form>
+    </div>
     
     <!-- Footer -->
     <footer id="footer">
       <img id="footer-img" src="https://lh3.googleusercontent.com/AiPfIM11DCiC-nFNziHUjR8TqPGwKyPac-gjXiM6UX-gbu2bNuwgJjRQKz3wDaMnAlNGJjMgQivmKmXIu77E3C_6c2qCcp3j1oh9g-s2SPkLJV68IA2nj8Bo-IiOj_qMcxy5blJBUA=w434-h96-p-k" />
-      <h1 id="news">News & Info</h1>
+      <h1>News & Info</h1>
       <div id="news-link">
-        <p>Our story</p>
-        <p>FAQ & Support</p>
-        <p>Blog</p>
-        <p>Contact</p>
-        <p>Reviews</p>
+        <p><a href="#our-story">Our story</a></p>
+        <p><a href="#faq">FAQ & Support</a></p>
+        <p><a href="#blog">Blog</a></p>
+        <p><a href="#contact">Contact</a></p>
+        <p><a href="#reviews">Reviews</a></p>
       </div>
       
-      <h1 id="legal">Legal</h1>
+      <h1>Legal</h1>
       <div id="legal-link">
-        <p>Legal overview</p>
-        <p>Terms & conditions</p>
-        <p>Privacy policy</p>
-        <p>Terms & conditions Cloud</p>
-        <p>Subscription</p>
-        <p>End User License Agreement</p>
-        <p>Cookie policy</p>
+        <p><a href="#legal">Legal overview</a></p>
+        <p><a href="#terms">Terms & conditions</a></p>
+        <p><a href="#privacy-policy">Privacy policy</a></p>
+        <p><a href="#terms-cloud">Terms & conditions Cloud</a></p>
+        <p><a href="#subscription">Subscription</a></p>
+        <p><a href="#license">End User License Agreement</a></p>
+        <p><a href="#cookie">Cookie policy</a></p>
       </div>
       
-      <img id="copyright-img" src="https://lh3.googleusercontent.com/AiPfIM11DCiC-nFNziHUjR8TqPGwKyPac-gjXiM6UX-gbu2bNuwgJjRQKz3wDaMnAlNGJjMgQivmKmXIu77E3C_6c2qCcp3j1oh9g-s2SPkLJV68IA2nj8Bo-IiOj_qMcxy5blJBUA=w434-h96-p-k" />
-      <p id="registered">&#174;</p>
-      <p id="copyright">&#169; 2020
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;
-        . All rights reserved.</p>
+      <div id="copyright-container">
+        <div id="copyright">
+          &#169;2020
+          <img id="notable-img" src="https://lh3.googleusercontent.com/AiPfIM11DCiC-nFNziHUjR8TqPGwKyPac-gjXiM6UX-gbu2bNuwgJjRQKz3wDaMnAlNGJjMgQivmKmXIu77E3C_6c2qCcp3j1oh9g-s2SPkLJV68IA2nj8Bo-IiOj_qMcxy5blJBUA=w434-h96-p-k" />
+          <span id="registered">&#174;</span>.
+          All rights reserved.
+        </div>
+      </div>
     </footer>
   </main>
 </body>
