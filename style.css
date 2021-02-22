@@ -21,7 +21,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 8px 16px;
+  padding: 16px;
+  position: relative;
 
   background: #CAE8D5;
 }
@@ -33,65 +34,42 @@ header {
 
 #menu-button {
   display: block;
-  position: relative;
-  width: 22px;
-  height: 1.5px;
-
-  margin: 6px 0;
-  
-  background: #1A1A1A;
-  border-style: none;
-  border-radius: 5px;
-}
-
-#menu-button:before {
-  content: "";
-  display: block;
-  position: absolute;
-  bottom: 6px;
-  width: 22px;
-  height: 1.5px;
-  
-  background: #1A1A1A;
-  border-style: none;
-  border-radius: 5px;
-}
-
-#menu-button::after {
-  content: '';
-  display: block;
-  position: relative;
-  top: 6px;
-  width: 22px;
-  height: 1.5px;
-  
-  background: #1A1A1A;
-  border-style: none;
-  border-radius: 5px;
+  cursor: pointer;
 }
 
 #nav-bar {
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  height: 140px;
+  left: 0;
+  top: 44px;
+
+  background: #CAE8D5;
+  padding: 24px 28px;
+  box-shadow: 0 4px 8px -8px #1A1A1A;
   display: none;
-  margin-top: 8px;
 }
 
 #nav-bar ul {
   list-style: none;
   display: flex;
-  /* width: 327px; */
-  /* justify-content: space-between;  */
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 #nav-menu {
   list-style: none;
-  /* padding: 29px 0px; */
-  font-family: Quicksand, san-serif;
-  font-size: 17.075px;
 }
 
 .nav-link {
-  color: #1A1A1A;
+  font-family: Quicksand;
   font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+
+  color: #1A1A1A;
 }
 
 #get-started {
@@ -263,6 +241,14 @@ header {
 }
 
 /* How it works */
+#how-it-works {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: #9EC5C9;
+}
+
 #video {
   width: 320px;
   height: 213.33px;
@@ -418,7 +404,7 @@ footer * {
   font-family: Quicksand;
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 20px;
 
   margin-top: 32px;
@@ -435,7 +421,7 @@ footer * {
   font-family: Quicksand;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 14px;
 
   color: #EFEFEF;
 }

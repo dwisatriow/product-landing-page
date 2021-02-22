@@ -13,18 +13,24 @@
 
   <!-- Stylesheet -->
   <link href="./style.css" type="text/css" rel="stylesheet">
+
+  <script src="./script.js"></script>
 </head>
 <body>
   <!-- Header -->
   <header id="header">
     <img id="header-img" src="https://lh3.googleusercontent.com/C4MYtyiVKO6vMg8bHeCLWmhc6HCyxy6Vo1P7hwg9Z5f_iM4L6MjXOqGb2RKLTeNDe4NlwFVXNP-Olqc2Typt6ya7VkaIC8CHvu3ltv9nOm5fOnP7btw48SotTuYKx8u0ULyy0KMS4A=w434-h96-p-k" />
-    <button id="menu-button"></button>
+    <span id="menu-button" onclick="menuButtonClick()" class="iconify" data-inline="false" data-icon="bytesize:menu" style="font-size: 24px;"></span>
+    <!-- <button id="menu-button">
+      
+    </button> -->
+    
 
     <nav id="nav-bar">
       <ul>
-        <li id="nav-menu"><a class="nav-link" href="#features"><span>Features</span></a></li>
-        <li id="nav-menu"><a class="nav-link" href="#video"><span>How it works</span></a></li>
-        <li id="nav-menu"><a class="nav-link" href="#specs"><span>Specs</span></a></li>
+        <li id="nav-menu"><a class="nav-link" onclick="menuButtonClick()" href="#features"><span>Features</span></a></li>
+        <li id="nav-menu"><a class="nav-link" onclick="menuButtonClick()" href="#how-it-works"><span>How it works</span></a></li>
+        <li id="nav-menu"><a class="nav-link" onclick="menuButtonClick()" href="#specs"><span>Specs</span></a></li>
       </ul>
     </nav>
 
@@ -68,11 +74,12 @@
         <p>A display that feels like paper</p>
       </div>
       <img id="notable-front-rear" src="https://lh3.googleusercontent.com/1afkmVDV7errYtFiZVu1i5HWN8myH3KP8Ziqfy-mENt2c8f0wcuk5Sza0Itu_sQaEFgCg7Eg64TP81NiHcge8WZq6giuI7LYPKJz8EDNbHbPFPvZms5v9r-boyvYrUbd5g4Xh9y7gw=w2400" />
+    </div>
       
-      <!-- How it works -->
+    <!-- How it works -->
+    <div id="how-it-works">
       <iframe id="video" width="720" height="480" src="https://www.youtube.com/embed/lvcGBfA4siQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-
     
     <!-- Specs -->
     <div id="specs">
