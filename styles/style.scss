@@ -82,9 +82,10 @@ header {
   top: 44px;
 
   padding: 24px 28px;
-  /* box-shadow: 0 4px 8px -8px #1A1A1A; */
+  box-shadow: 0 4px 8px -8px #1A1A1A;
   display: none;
   background: #CAE8D5;
+  z-index: 1;
 
   @media (min-width: 576px) {
     display: flex;
@@ -97,6 +98,10 @@ header {
     padding: 0;
   
     background: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
   }
   @media (min-width: 768px) {
     display: flex;
@@ -127,10 +132,6 @@ header {
   
     position: static;
     width: 260px;
-  
-    /* -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none; */
   }
   @media (min-width: 768px) {
     display: flex;
@@ -140,10 +141,6 @@ header {
   
     position: static;
     width: calc(190px + 10vw);
-  
-    /* -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none; */
   }
 }
 
