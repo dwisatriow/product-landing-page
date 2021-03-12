@@ -38,10 +38,10 @@ window.onload = function() {
       document.documentElement.scrollTop > 50
     ) {
       document.querySelector("#header").className = "floatingHeader";
-      document.querySelector("#header-img").style.display = "block";
+      if (window.innerWidth < 576) document.querySelector("#header-img").style.display = "block";
     } else {
       document.querySelector("#header").className = "";
-      document.querySelector("#header-img").style.display = "none";
+      if (window.innerWidth < 576) document.querySelector("#header-img").style.display = "none";
     }
   }
 
