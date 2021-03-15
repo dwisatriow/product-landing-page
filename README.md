@@ -1,6 +1,5 @@
 # Product Landing Page
-A product landing page for mock Notable tablet\
-Built with HTML, Sass and JavaScript.  
+A product landing page for mock Notable tablet. Built with HTML, Sass and JavaScript.  
 
 ## Dependecies
 - [Gulp](https://gulpjs.com/)
